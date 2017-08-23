@@ -1,2 +1,2 @@
 # bitcoin-price
-Shows the latest Bitcoin price on a web page using a Python script
+Shows the latest Bitcoin price using a Python script
