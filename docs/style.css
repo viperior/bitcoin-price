@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(10, 11, 3);
+    background-image: url(bitcoin.jpg);
+    background-size: cover;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.price {
+    visibility: visible;
+}
+.price-mobile {
+    display: none;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    width: 0px;
+}
+.price, .price-mobile, .timestamp {
+    background-color: rgba(220, 220, 220, 0.1);
+    text-align: center;
+}
+.price, .price-mobile {
+    color:rgba(229, 235, 52, 0.9);
+    font-weight: bold;
+    font-size: 120px;
+}
+.timestamp {
+    color: rgba(90, 230, 255, 0.8);
+    font-size: 54px;
+}
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        margin-bottom: 10px;
+    }
+    .price {
+        display: none;
+        height: 0px;
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+        width: 0px;
+    }
+    .price-mobile {
+        display: block;
+        font-size: 92px;
+        height: auto;
+        margin: auto;
+        padding: auto;
+        visibility: visible;
+        width: auto;
+    }
+    .timestamp {
+        font-size: 24px;
+    }
+}
